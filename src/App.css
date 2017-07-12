@@ -24,12 +24,12 @@ ul{
   padding: 0;
 }
 
-.nav-bar{
+/*.nav-bar{
   background-color: #4caf50;
   overflow: hidden;
-}
+}*/
 
-.nav-bar a{
+/*.nav-bar a{
   float: left;
   display: block;
   color: #f2f2f2;
@@ -42,7 +42,7 @@ ul{
 .nav-bar a:hover{
   background-color: #227986;
   color: #eee;
-}
+}*/
 
 .user-info{
   padding-left: 10px;
@@ -54,21 +54,21 @@ ul{
   height: 250px;
 }
 
-.side-bar{
+/*.side-bar{
   padding-left: 10px;
   position: relative;
 }
 
 .display-body{
   position: relative;
-  bottom: 320px;
+  bottom: 350px;
   left: 500px;
   width: 400px;
   padding: 0;
   margin: 0;
-}
+}*/
 
-.user-info-table{
+/*.user-info-table{
   border-collapse: collapse;
   width: 100%;
   border-spacing: 15px;
@@ -83,9 +83,20 @@ td, th{
 th{
   background-color: black;
   color: white;
+}*/
+
+.user-bio{
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
 }
 
-.search-button{
+.user-bio-api{
+  padding: 0;
+  margin:0;
+}
+
+/*.search-button{
   background-color: #4caf50;
   padding: 10px 36px;
   border: none;
@@ -113,7 +124,7 @@ th{
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   font-size: 20px;
-}
+}*/
 
 .error-message{
   color: #bb1414

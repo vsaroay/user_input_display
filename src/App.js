@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home'
 import Search from './components/Search'
 import Display from './components/Display'
+import Repository from './components/Repository'
 import {
   BrowserRouter,
   Route,
@@ -17,21 +18,22 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <header>
+          <div>
             <nav className="nav-bar">
               <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/search">Search</Link></li>
               </ul>
             </nav>
-          </header>
-          <main>
+          </div>
+          <div>
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route path="/search" component={Search}/>
               <Route path="/display" component={Display}/>
+              <Route path="/repos" component={Repository}/>
             </Switch>
-          </main>
+          </div>
         </div>
       </BrowserRouter>
     );
