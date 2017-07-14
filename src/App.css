@@ -2,19 +2,14 @@
   text-align: center;
   padding-top: 150px;
   font-family: 'Lato', sans-serif;
-  font-size: 36px;
+  /*font-size: 36px;*/
   color: #227986;
-}
-
-.search-div{
-  text-align: center;
-  padding-top: 150px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 .search-header{
   font-family: 'Lato', sans-serif;
-  font-size: 36px;
+  /*font-size: 36px;*/
   color: #227986;
 }
 
@@ -24,28 +19,7 @@ ul{
   padding: 0;
 }
 
-/*.nav-bar{
-  background-color: #4caf50;
-  overflow: hidden;
-}*/
-
-/*.nav-bar a{
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.nav-bar a:hover{
-  background-color: #227986;
-  color: #eee;
-}*/
-
 .user-info{
-  padding-left: 10px;
   color: #892345;
 }
 
@@ -54,77 +28,10 @@ ul{
   height: 250px;
 }
 
-/*.side-bar{
-  padding-left: 10px;
-  position: relative;
-}
-
-.display-body{
-  position: relative;
-  bottom: 350px;
-  left: 500px;
-  width: 400px;
-  padding: 0;
-  margin: 0;
-}*/
-
-/*.user-info-table{
-  border-collapse: collapse;
-  width: 100%;
-  border-spacing: 15px;
-  border: 2px solid black;
-}
-
-td, th{
-  text-align: center;
-  padding: 6px;
-}
-
-th{
-  background-color: black;
-  color: white;
-}*/
-
-.user-bio{
-  text-align: center;
-  padding-top: 10px;
-  margin: 0;
-}
-
 .user-bio-api{
   padding: 0;
   margin:0;
 }
-
-/*.search-button{
-  background-color: #4caf50;
-  padding: 10px 36px;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  transition-duration: 0.2;
-}
-
-.search-button:hover{
-  background-color: #4c9050;
-}
-
-.search-input{
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background-color: white;
-  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png");
-  background-position: 10px 10px;
-  background-size: 27px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  font-size: 20px;
-}*/
 
 .error-message{
   color: #bb1414
@@ -132,4 +39,8 @@ th{
 
 .user-not-found{
   text-align: center;
+}
+
+navbar navbar-light{
+  background-color: #e3f2fd;
 }

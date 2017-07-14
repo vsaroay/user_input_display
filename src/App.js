@@ -18,11 +18,15 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <div>
-            <nav className="nav-bar">
-              <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/search">Search</Link></li>
+          <div className="container">
+            <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">Home</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/search" className="nav-link">Search</Link>
+                </li>
               </ul>
             </nav>
           </div>

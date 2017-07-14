@@ -4,13 +4,13 @@ class Repository extends Component{
     constructor(props){
         super(props)
         this.state = {
-            repoData: "",
+            repoInfo: null,
             error: null
         }
     }
 
     componentDidMount(){
-        fetch(`https://api.github.com/repos/vsaroay/pokemon_table`)
+        fetch(`https://api.github.com/repos/${this.props.location.state.username}/${this.props.location.state.singleRepo}`)
         .then(function(res){
                     if(res.ok){
                         return res.json()
@@ -19,7 +19,7 @@ class Repository extends Component{
                 })
                 .then(res => {
                     this.setState({
-                        repoData: res
+                        repoInfo: res
                     })
                 }).catch((err) => {
                     this.setState({ error: 'No repos' })
@@ -27,10 +27,21 @@ class Repository extends Component{
     }
 
     render(){
+        if (!this.state.repoInfo)
+            return(
+                <div className="container">
+                    <p>Loading...</p>
+                </div>
+            )
+        else
         return(
-            <div>
-                <h1>Hello</h1>
-                {console.log(this.state.repoData)}
+            <div className="container">
+                <h1>{this.state.repoInfo.name}</h1>
+                <p>Created At: {this.state.repoInfo.created_at}</p>
+                <p>Updated At: {this.state.repoInfo.updated_at}</p>
+                <p>Subscribers: {this.state.repoInfo.subscribers_count}</p>
+                <p>Default Branch: {this.state.repoInfo.default_branch}</p>
+                {console.log(this.state.repoInfo)}
             </div>
         )
     }

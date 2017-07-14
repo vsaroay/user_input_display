@@ -6,7 +6,7 @@ class Search extends Component{
         this.state={
             name: "",
             isValidUserMsg: "",
-            emptyUserMsg: "",
+            emptyUserMsg: null,
             isEmpty: true
         }
     }
@@ -26,19 +26,21 @@ class Search extends Component{
 
     render(){
         return(
-            <div className="search-div">
-                <h2 className="search-header">Search for User</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input className="search-input"
-                        placeholder="Search"
-                        type="text"
-                        onChange={(e) => this.setState({name:e.target.value, isEmpty: false})}
-                    />
-                    <p className="error-message">
-                        {this.state.emptyUserMsg}
-                    </p>
-                    <button className="search-button">Submit</button>
+            <div className="container">
+                <form onSubmit={this.handleSubmit} className="form-inline my-2 my-lg-0">
+                    <h6 className="col-sm-2 col-form-label">Search for User</h6>
+                    <div className="col-sm-10">
+                        <input className="form-control" classID="inputUser"
+                            placeholder="Search"
+                            type="text"
+                            onChange={(e) => this.setState({name:e.target.value, isEmpty: false})}
+                        />
+                    </div>
+                    <button className="btn btn-outline-primary my-2 my-sm-0">Submit</button>
                 </form>
+                <span>
+                    <strong>{this.state.emptyUserMsg}</strong>
+                </span>
             </div>
         )
     }
